@@ -45,7 +45,7 @@
         //Object mapping A-Z to local image paths 
         const images = {}; for (let i = 65; i <= 90; i++) { // ASCII A-Z (65-90) 
             let letter = String.fromCharCode(i); // Convert ASCII to letter 
-            images[letter] = `images/${letter}.jpg`; // Assuming files are named "A.jpg", "B.jpg", etc.
+            images[letter] = `images/${letter}.png`; // Assuming files are named "A.jpg", "B.jpg", etc.
              } function displayImage() { const input = document.getElementById("charInput").value.toUpperCase(); // Convert input to uppercase
               const imgElement = document.getElementById("displayedImage"); if (images[input]) { imgElement.src = images[input]; // Load image from local folder
                  imgElement.style.display = "block"; } else { imgElement.src = "images/default.jpg"; // Default image for invalid input
