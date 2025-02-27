@@ -6,28 +6,44 @@
     <title>1 INPUT 1 OUTPUT TEMPLATE</title>
     <style>
         body{
-            background-color: antiquewhite;
+            background-image: url(lab.jpg);
+            text-align: center;
+            background-color: #B3D7E0;
+            border: 30px;
+            border-color: #1A4D6D
         }
 
+        @import url("https://use.typekit.net/klk5qoe.css");
+        @import url("https://use.typekit.net/vmk7qex.css");
+
         h1{
-            color: #63adca;
+            color: #2A7A9D;
+            font-family: "printf", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            padding: 3%;
+            background-color: aliceblue;
+            margin: 2%;
         }
 
         /* STYLE FOR THE INPUT FIELD */
         #charInput {
-            color: gray;
-
+            text-align: center;
         }
 
         /* STYLE FOR THE SUBMIT BUTTON */
         #submitButton {
-            color: aqua;
-
+            color: #1A4D6D;
+            text-align: center;
+            font-family: "jali-latin-variable", sans-serif;
+            font-variation-settings: "wght" 400;
         }
 
         /* STYLE FOR THE IMAGE */
         #displayedImage {
             display: none; /* This line is mandatory */
+            padding-top: 5%;
+            padding-left: 35rem;
         }
     </style>
 </head>
@@ -55,7 +71,7 @@
             images[letter] = `images/${letter}.png`; // Assuming files are named "A.jpg", "B.jpg", etc.
              } function displayImage() { const input = document.getElementById("charInput").value.toUpperCase(); // Convert input to uppercase
               const imgElement = document.getElementById("displayedImage"); if (images[input]) { imgElement.src = images[input]; // Load image from local folder
-                 imgElement.style.display = "block"; } else { imgElement.src = "images/default.jpg"; // Default image for invalid input
+                 imgElement.style.display = "block"; } else { imgElement.src = "images/default.png"; // Default image for invalid input
                  imgElement.style.display = "block"; } } 
     </script> 
 </body> 
